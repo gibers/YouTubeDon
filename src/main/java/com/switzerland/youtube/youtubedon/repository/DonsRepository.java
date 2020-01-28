@@ -14,7 +14,7 @@ public interface DonsRepository extends CrudRepository<DonsEntity, Long> {
 
     List<DonsEntity> findByDonateurIdAndQuestionPhrase(long idDonateur, String question);
 
-    List<DonsEntity> findByDonateurIdAndQuestionId(long idDonateur, long idQuestion);
+    List<DonsEntity> findByDonateurIdAndQuestionDonsEntity(long idDonateur, long idQuestion);
 
     List<DonsEntity> findByDonateurIdAndQuestionStatus(long idDonateur, int status);
 

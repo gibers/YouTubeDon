@@ -17,7 +17,7 @@ public class QuestionEntity {
     @Id
 //    @GeneratedValue(strategy= GenerationType.SEQUENCE, generator = "link_seq")
 //    @SequenceGenerator(name="link_seq", sequenceName = "seq_question", allocationSize=1)
-    private long DonsEntity_id;
+    private long donsEntity;
 
     @Id
     private String mapPhraseStatus_ORDER;
@@ -30,6 +30,6 @@ public class QuestionEntity {
     private LocalDateTime datecreation;
 
     public long getId() {
-        return DonsEntity_id;
+        return donsEntity;
     }
 }
