@@ -2,15 +2,9 @@ package com.switzerland.youtube.youtubedon.entities;
 
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 @Entity
 @Data
@@ -36,11 +30,11 @@ public class DonsEntity {
     @Column(updatable = false)
     private LocalDateTime datecreation;
 
-    @ElementCollection
-    @CollectionTable(name = "question")
+//    @ElementCollection
+//    @CollectionTable(name = "question")
 //    @MapKeyColumn(name = "phrase")
-    @OrderColumn
-    @Column(name = "phrase")
-    protected List<String> mapPhraseStatus = new ArrayList<>();
+//    @OrderColumn
+//    @Column(name = "phrase")
+//    protected List<String> mapPhraseStatus = new ArrayList<>();
 
 }
